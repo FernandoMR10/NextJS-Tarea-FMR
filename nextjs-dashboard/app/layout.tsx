@@ -1,5 +1,5 @@
 import '@/app/ui/global.css';
-import { adamina } from '@/app/ui/fonts'; // Asegúrate de que la ruta sea correcta
+import { adamina } from '@/app/ui/fonts';
 
 export default function RootLayout({
   children,
@@ -10,6 +10,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${adamina.className} antialiased`}> 
         {children}
+        <footer className='py-10 flex justify-center item-center'>Hecho con ❤️ por Vercel</footer>
       </body>
     </html>
   );
