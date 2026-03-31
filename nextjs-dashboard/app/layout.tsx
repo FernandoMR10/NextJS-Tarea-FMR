@@ -1,3 +1,6 @@
+import '@/app/ui/global.css';
+import { adamina } from '@/app/ui/fonts'; // Asegúrate de que la ruta sea correcta
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${adamina.className} antialiased`}> 
+        {children}
+      </body>
     </html>
   );
 }
